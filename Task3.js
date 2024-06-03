@@ -1,13 +1,13 @@
-function segitigaSiku(panjang){
-    let printSegitiga = "";
+const printSegitiga = 5
 
-    for(i = 0; i < 5; i++){
-        for(j = 0; j > i; j--){
-            printSegitiga = '* ';
+if(typeof printSegitiga === "number"){
+    for(let numAwal = printSegitiga; numAwal > 0; numAwal--){
+        let text = ""
+        for(let i = 1; i <= numAwal; i++){
+            text = text + i + " "
         }
-    
-    }   printSegitiga = '\n';
-    
-    return printSegitiga; 
-}
-console.log(segitigaSiku(5))
+        console.log(text)
+    }
+} else (
+    console.log("Data Harus Number")
+)
