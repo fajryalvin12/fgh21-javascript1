@@ -20,3 +20,9 @@ const secondary = {hobby: "Reading a Book"};
 
 const biodata = {...primary, ...secondary};
     console.log(biodata)
+
+const address = {street: "Kulas Light", city: "Gwenborough",}
+const {street, city} = address
+
+console.log(street)
+console.log(city)
